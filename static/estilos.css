@@ -1,0 +1,176 @@
+/* ---------- FUENTES ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+/* ---------- BASE ---------- */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fuente más original */
+    background-color: #121212; /* oscuro */
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #ff3c00;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif; /* Fuente más original para títulos */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #2c2c2c;
+}
+
+nav a:hover {
+    background-color: #ff3c00;
+    color: #fff;
+}
+
+/* ---------- MAIN ---------- */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1; /* Hace que el main ocupe el espacio disponible */
+}
+
+section {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+h2, h3 {
+    color: #ff3c00;
+    margin-bottom: 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* ---------- BOTONES ---------- */
+.boton {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boton:hover {
+    background-color: #ff3c00;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ---------- TABLAS ---------- */
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tabla-productos th, .tabla-productos td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-productos th {
+    background-color: #2c2c2c;
+}
+
+.tabla-productos tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.tabla-productos tr:hover {
+    background-color: #ff3c00;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+/* ---------- IMÁGENES EMPLEADOS ---------- */
+.empleado {
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
+    width: 150px;
+}
+
+.imagen-empleado {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular */
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagen-empleado:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 60, 0, 0.7);
+}
+
+.nombre-empleado {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ff3c00;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.cargo-empleado {
+    font-size: 0.9rem;
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-top: 2px solid #ff3c00;
+    margin-top: auto; /* Hace que el footer siempre quede abajo */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #f5f5f5;
+}
